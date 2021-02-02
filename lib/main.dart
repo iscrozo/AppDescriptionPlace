@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'app2',
+        title: 'Desc-Place',
         home: Scaffold(
             appBar: AppBar(
-              title: Text("App DescPlace",
+              title: Text("Desc-Place",
               textAlign: TextAlign.center,),
             ),
             body: new DescriptionPlace("Chiquinquira",5,textLorem)));
