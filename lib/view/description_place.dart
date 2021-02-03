@@ -7,9 +7,12 @@ class DescriptionPlace extends StatelessWidget {
   String namePlace;
   double stars;
   String descriptionPlace;
-  double positionStarY = 13.0;
+  // double positionStarY = 13.0;
+  // double positionStarX = 3.0;
+  // double positionTitleY = 10.0;
+  double positionStarY = 323.0;
   double positionStarX = 3.0;
-  double positionTitleY = 10.0;
+  double positionTitleY = 320.0;
   double qualifyCity;
   // double positionTitleX =
 
@@ -80,7 +83,9 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     return Column(
-      children: [picture, title_stars, description],
+      children: [
+        //picture,
+        title_stars, description],
     );
   }
 }

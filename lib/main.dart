@@ -1,9 +1,12 @@
+import 'package:app2/view/components_utils/card_image.dart';
 import 'package:app2/view/review.dart';
+import 'package:app2/view/review_list.dart';
 import 'package:flutter/material.dart';
 import 'package:app2/view/description_place.dart';
+import 'package:app2/view/components_utils/gradient_back.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,25 +17,31 @@ class MyApp extends StatelessWidget {
   String name = "User 1";
   String details = "1 review  photos";
   String comment = "There is an amazing place in Boyaca";
-
+  String titleApp = "Religious Capital";
   @override
   Widget build(BuildContext context) {
-    final bodyReview = Column(
+    final bodyReview = Stack(
       children: [
-        new DescriptionPlace("Chiquinquira", 5, textLorem,4.5),
-        new Review(pathImage, name, details, comment, 3),
+        ListView(
+          children: [
+            DescriptionPlace("Chiquinquira", 5, textLorem,4.5),
+            ReviewList()
+          ],
+        ),
+        GradientBack(titleApp),
+        CardImage("assets/img/chiquinquira.jpg")
       ],
     );
 
     return MaterialApp(
         title: 'Desc-Place',
         home: Scaffold(
-            appBar: AppBar(
-              title: Text(
-                "Desc-Place",
-                textAlign: TextAlign.center,
-              ),
-            ),
+            // appBar: AppBar(
+            //   title: Text(
+            //     "Desc-Place",
+            //     textAlign: TextAlign.center,
+            //   ),
+            // ),
             body: bodyReview));
   }
 }

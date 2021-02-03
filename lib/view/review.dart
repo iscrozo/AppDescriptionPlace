@@ -5,7 +5,7 @@ import 'package:app2/util/varcolors.dart';
 class Review extends StatelessWidget {
   String pathImage = "assets/img/user.png";
   String name = "User 1";
-  String details = "1 review  photos";
+  String details = "1 review 5 photos";
   String comment = "There is an amazing place in Boyaca";
   double quantityStars;
 
