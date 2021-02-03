@@ -46,6 +46,7 @@ class DescriptionPlace extends StatelessWidget {
           child: Text(
             namePlace,
             style: TextStyle(
+              fontFamily: "Lora",
               fontSize: 30,
               fontWeight: FontWeight.w900,
             ),
@@ -74,6 +75,7 @@ class DescriptionPlace extends StatelessWidget {
         descriptionPlace,
         textAlign: TextAlign.justify,
         style: TextStyle(
+            fontFamily: "Lora",
             fontWeight: FontWeight.bold, fontSize: 16, color: colorText),
       ),
     );

@@ -78,3 +78,9 @@ flutter:
 
   assets:
     - assets/img/chiquinquira.jpg
+
+  fonts:
+    - family : Lora
+      fonts:
+        - asset: assets/fonts/Lora-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/Lora-VariableFont_wght.ttf
