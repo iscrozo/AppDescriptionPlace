@@ -78,6 +78,7 @@ flutter:
 
   assets:
     - assets/img/chiquinquira.jpg
+    - assets/img/user.png
 
   fonts:
     - family : Lora

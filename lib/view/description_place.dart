@@ -1,40 +1,34 @@
 import 'package:app2/util/varcolors.dart';
 import 'package:flutter/material.dart';
+import 'package:app2/view/components_utils/shape_stars.dart';
 
 // ignore: must_be_immutable
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
-  int stars;
+  double stars;
   String descriptionPlace;
-  double positionStarY = 13.0 ;
-  double positionStarX= 3.0 ;
+  double positionStarY = 13.0;
+  double positionStarX = 3.0;
   double positionTitleY = 10.0;
+  double qualifyCity;
   // double positionTitleX =
 
-  DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
+  DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace, this.qualifyCity);
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     final icon_star_half = Container(
-      margin: EdgeInsets.only(top: positionStarY , right: positionStarX),
+      margin: EdgeInsets.only(top: positionStarY, right: positionStarX),
       child: Icon(
         Icons.star_half,
         color: colorStar,
       ),
     );
     final icon_star_border = Container(
-      margin: EdgeInsets.only(top: positionStarY , right: positionStarX),
+      margin: EdgeInsets.only(top: positionStarY, right: positionStarX),
       child: Icon(
         Icons.star_border,
-        color: colorStar,
-      ),
-    );
-
-    final icon_star = Container(
-      margin: EdgeInsets.only(top: positionStarY , right: positionStarX),
-      child: Icon(
-        Icons.star,
         color: colorStar,
       ),
     );
@@ -53,8 +47,11 @@ class DescriptionPlace extends StatelessWidget {
             textAlign: TextAlign.left,
           ),
         ),
-        Row(
-          children: [icon_star, icon_star, icon_star_half, icon_star_border],
+        Container(
+          margin: EdgeInsets.only(top: positionStarY, right: positionStarX),
+          child: Row(
+            children: [new ShapeStars(qualifyCity, 0.0, 25.0)],
+          ),
         )
       ],
     );
@@ -76,7 +73,9 @@ class DescriptionPlace extends StatelessWidget {
         textAlign: TextAlign.justify,
         style: TextStyle(
             fontFamily: "Lora",
-            fontWeight: FontWeight.bold, fontSize: 16, color: colorText),
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            color: colorText),
       ),
     );
 
