@@ -3,7 +3,8 @@
 Its a new app create for look the nice citys in Colombia
 
 ### Image </br>
-![imagen](https://user-images.githubusercontent.com/40553244/106598377-a288c600-6525-11eb-9265-42caebfcef4f.png)
+![imagen](https://user-images.githubusercontent.com/40553244/106696142-17054880-65aa-11eb-9feb-bf569d059d1e.png)
+
 
 
 ### Install </br>
