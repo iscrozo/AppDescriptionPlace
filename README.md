@@ -1,14 +1,16 @@
 # AppDescriptionPlace
 
 Its a new app create for look the nice citys in Colombia
+doing use the material design
 
 ### Image </br>
-![imagen](https://user-images.githubusercontent.com/40553244/106696142-17054880-65aa-11eb-9feb-bf569d059d1e.png)
-
+![imagen](https://user-images.githubusercontent.com/40553244/106745907-c4e71600-65ef-11eb-9364-83b165c90fb9.png)
 
 
 ### Install </br>
- 
+git clone https://github.com/iscrozo/AppDescriptionPlace
+Open to Project (AndroidStudio/VScode)
+
 ### Launch </br>
 flutter run
 
