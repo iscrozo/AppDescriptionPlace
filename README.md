@@ -8,7 +8,7 @@ doing use the material design
 
 
 ### Install </br>
-git clone https://github.com/iscrozo/AppDescriptionPlace
+git clone thisProject
 Open to Project (AndroidStudio/VScode)
 
 ### Launch </br>
