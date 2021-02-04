@@ -1,7 +1,8 @@
 # AppDescriptionPlace
 
-Its a new app create for look the nice citys in Colombia
-doing use the material design
+Project to create an app through flutter to make the beauty of the towns, cities of Colombia known.
+
+It is time to see Colombia in a big way, recognized for its architectural image, landscapes and gastronomy.
 
 ### Image </br>
 ![imagen](https://user-images.githubusercontent.com/40553244/106745907-c4e71600-65ef-11eb-9364-83b165c90fb9.png)
