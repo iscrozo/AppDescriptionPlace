@@ -1,6 +1,8 @@
 import 'package:app2/util/varcolors.dart';
-import 'package:flutter/material.dart';
 import 'package:app2/view/components_utils/shape_stars.dart';
+import 'package:flutter/material.dart';
+
+import 'components_utils/button_purple.dart';
 
 // ignore: must_be_immutable
 class DescriptionPlace extends StatelessWidget {
@@ -10,13 +12,14 @@ class DescriptionPlace extends StatelessWidget {
   // double positionStarY = 13.0;
   // double positionStarX = 3.0;
   // double positionTitleY = 10.0;
-  double positionStarY = 323.0;
+  double positionStarY = 333.0;
   double positionStarX = 3.0;
   double positionTitleY = 320.0;
   double qualifyCity;
   // double positionTitleX =
 
-  DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace, this.qualifyCity);
+  DescriptionPlace(
+      this.namePlace, this.stars, this.descriptionPlace, this.qualifyCity);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +42,7 @@ class DescriptionPlace extends StatelessWidget {
     final title_stars = Row(
       children: [
         Container(
-          margin: EdgeInsets.only(top: positionTitleY, left: 20.0, right: 20.0),
+          margin: EdgeInsets.only(top: 330.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
             style: TextStyle(
@@ -70,7 +73,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final description = Container(
-      margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+      margin: EdgeInsets.only(top: 20, left: 20, right: 20),
       child: Text(
         descriptionPlace,
         textAlign: TextAlign.justify,
@@ -83,9 +86,13 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         //picture,
-        title_stars, description],
+        title_stars,
+        description,
+        ButtonPurple("Navigate"),
+      ],
     );
   }
 }
